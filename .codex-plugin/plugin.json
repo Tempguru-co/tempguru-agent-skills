@@ -1,0 +1,35 @@
+{
+  "name": "tempguru-event-staffing",
+  "version": "1.0.0",
+  "description": "W-2 event staffing for AI agents across 300+ US and Canadian markets — brand ambassadors, registration, hospitality, setup/breakdown, and more. Read-only access to coverage, rates, lead-time guidance, and state compliance summaries. No authentication required.",
+  "author": {
+    "name": "TempGuru (Temporary Assistance Guru, Inc.)",
+    "email": "megan@tempguru.co",
+    "url": "https://tempguru.co"
+  },
+  "homepage": "https://tempguru.co/ai",
+  "repository": "https://github.com/kissmyabs32/tempguru-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "event-staffing",
+    "brand-ambassadors",
+    "w-2-compliance",
+    "trade-shows",
+    "conventions",
+    "festivals",
+    "sporting-events",
+    "hospitality",
+    "registration"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "TempGuru Event Staffing",
+    "shortDescription": "Order W-2 event staff in 300+ US/CA markets via TempGuru",
+    "longDescription": "Read-only MCP-backed plugin that lets agents quote, schedule, and compliance-check temporary event staff for conventions, trade shows, festivals, concerts, sporting events, corporate events, and brand activations. Single events or multi-city programs. Pairs the canonical skills (event-staffing-ordering and event-staffing-compliance) with the live TempGuru MCP server at https://mcp.tempguru.co/mcp.",
+    "iconSmall": "./assets/tempguru-small.svg",
+    "defaultPrompt": "Use TempGuru to scope coverage, rates, lead times, and a planning estimate for the event staffing the user described.",
+    "privacyPolicyURL": "https://tempguru.co/privacy-policy",
+    "termsOfServiceURL": "https://tempguru.co/terms-of-service"
+  }
+}
