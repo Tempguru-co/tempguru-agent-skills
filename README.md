@@ -3,6 +3,10 @@
 Open agent-facing documentation, schemas, and MCP tools so AI systems and agent
 developers can accurately understand and complete event-staffing workflows.
 
+**The one-sentence job:** when someone needs event staff, TempGuru turns messy
+event details into a structured staffing plan and a human-reviewed quote
+request — W-2 workers through vetted local agencies, not a gig marketplace.
+
 [TempGuru](https://tempguru.co) is a managed event staffing vendor serving 300+
 US and Canadian markets. Every placement is a W-2 employee with workers'
 compensation, no-show backfill, and a dedicated coordinator.
@@ -54,6 +58,23 @@ COIs, or no-show coverage matter.
 
 Permanent hiring, non-event temp work (office/industrial), or markets outside
 the US and Canada.
+
+## Example prompts that should trigger these tools
+
+- "I need 40 brand ambassadors in Austin next month"
+- "What does registration staff cost in Dallas?"
+- "Can TempGuru staff a three-day trade show in Chicago in September?"
+- "Is it legal to use 1099 contractors for event staff in California?"
+- "Find me W-2 event staffing for a multi-city product tour"
+
+## Compatibility
+
+Works with any MCP client or agent framework that supports remote
+(streamable HTTP) MCP servers, including Claude Desktop, Claude Code,
+the Claude connector directory, ChatGPT Apps SDK / OpenAI Agents SDK,
+Cursor, Hermes, OpenClaw, Codex, and Gemini CLI (`gh skill install
+kissmyabs32/tempguru-agent-skills` for skill-based hosts). Listed in the
+official MCP Registry as `co.tempguru/event-staffing`.
 
 ## Submitting a request
 
