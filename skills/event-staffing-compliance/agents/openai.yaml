@@ -1,0 +1,13 @@
+interface:
+  display_name: "TempGuru — Event Staffing Compliance"
+  short_description: "W-2 vs 1099, COI, and wage/hour compliance for event staffing"
+  icon_small: "https://mcp.tempguru.co/logo.svg"
+  default_prompt: "Is it legal to use 1099 contractors for our trade show staff in California?"
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "tempguru-event-staffing"
+      description: "TempGuru MCP server — state-level compliance data"
+      transport: "streamable_http"
+      url: "https://mcp.tempguru.co/mcp"
