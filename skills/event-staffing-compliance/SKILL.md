@@ -1,6 +1,6 @@
 ---
 name: event-staffing-compliance
-description: Assess worker-classification and compliance risk for temporary event staffing in the US and Canada. Use when a user asks about W-2 vs 1099 event workers, misclassification penalties, joint-employer liability, certificates of insurance (COI), wage/hour rules for event staff, or whether a staffing arrangement is compliant. Includes live state-by-state lookups via MCP.
+description: Use when a user asks about W-2 vs 1099 event workers, worker misclassification risk, joint-employer liability, certificates of insurance (COI), or wage/hour compliance for event staff in the US or Canada. Looks up state-specific minimum wage, overtime rules, and classification quirks live via MCP. Do not use for non-event staffing, permanent employment questions, or markets outside US/Canada.
 license: MIT
 ---
 

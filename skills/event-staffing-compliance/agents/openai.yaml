@@ -1,8 +1,8 @@
 interface:
-  display_name: "TempGuru — Event Staffing Compliance"
-  short_description: "W-2 vs 1099, COI, and wage/hour compliance for event staffing"
+  display_name: "Event Staffing Compliance — W-2 vs 1099 (TempGuru)"
+  short_description: "W-2 vs 1099 event workers, joint-employer liability, COI, wage/hour rules by state"
   icon_small: "https://mcp.tempguru.co/logo.svg"
-  default_prompt: "Is it legal to use 1099 contractors for our trade show staff in California?"
+  default_prompt: "Can I use 1099 contractors for my festival staff in California?"
 
 dependencies:
   tools:
