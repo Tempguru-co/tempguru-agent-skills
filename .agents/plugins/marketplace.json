@@ -16,7 +16,7 @@
   },
   "icon": "https://mcp.tempguru.co/logo.svg",
   "homepage": "https://tempguru.co/ai",
-  "repository": "https://github.com/kissmyabs32/tempguru-agent-skills",
+  "repository": "https://github.com/tempguru-co/tempguru-agent-skills",
   "license": "MIT",
   "keywords": ["event-staffing", "brand-ambassadors", "trade-show", "festival-staff", "w2-compliance", "staffing-quote", "hire-event-staff"]
 }

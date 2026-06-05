@@ -73,7 +73,7 @@ Works with any MCP client or agent framework that supports remote
 (streamable HTTP) MCP servers, including Claude Desktop, Claude Code,
 the Claude connector directory, ChatGPT Apps SDK / OpenAI Agents SDK,
 Cursor, Hermes, OpenClaw, Codex, and Gemini CLI (`gh skill install
-kissmyabs32/tempguru-agent-skills` for skill-based hosts). Listed in the
+tempguru-co/tempguru-agent-skills` for skill-based hosts). Listed in the
 official MCP Registry as `co.tempguru/event-staffing`.
 
 ## Submitting a request

@@ -68,7 +68,7 @@ can share the connector organization-wide.
 ## Gemini CLI (extension)
 
 ```
-gemini extensions install https://github.com/kissmyabs32/tempguru-agent-skills
+gemini extensions install https://github.com/tempguru-co/tempguru-agent-skills
 ```
 
 ## Manual (any agent that reads SKILL.md)

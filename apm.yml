@@ -1,7 +1,7 @@
 name: tempguru-event-staffing
 version: 1.1.0
 description: W-2 event staffing data and quote requests for AI agents — city coverage, role pricing, lead-time guidance, and state compliance rules for 300+ US and Canadian markets.
-author: kissmyabs32
+author: tempguru-co
 license: MIT
 type: hybrid
 
