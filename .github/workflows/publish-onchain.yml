@@ -1,17 +1,30 @@
 name: Publish to Hashgraph Online Registry
 
+# Disabled — hashgraph-online/skill-publish@v1 requires api-key and
+# account-id credentials not yet set up. Valid inputs are:
+# api-base-url, api-key, account-id, skill-dir, name, version,
+# stamp-repo-commit, poll-timeout-ms, poll-interval-ms, annotate,
+# submit-indexnow, github-token
+#
+# To enable: create a Hashgraph Online account at hol.org/registry,
+# add HOL_API_KEY and HOL_ACCOUNT_ID to repo secrets, then uncomment.
+
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'skills/**'
+  workflow_dispatch: {}
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - 'skills/**'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    if: false  # disabled until HOL credentials are configured
     steps:
       - uses: actions/checkout@v4
       - uses: hashgraph-online/skill-publish@v1
         with:
-          repo: kissmyabs32/tempguru-agent-skills
-          registry: hol.org/registry
+          api-key: ${{ secrets.HOL_API_KEY }}
+          account-id: ${{ secrets.HOL_ACCOUNT_ID }}
+          skill-dir: skills/
+          github-token: ${{ secrets.GITHUB_TOKEN }}
