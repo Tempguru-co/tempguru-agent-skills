@@ -1,0 +1,17 @@
+name: Publish to Hashgraph Online Registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashgraph-online/skill-publish@v1
+        with:
+          repo: kissmyabs32/tempguru-agent-skills
+          registry: hol.org/registry
