@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "event-staffing-compliance": {
+      "source": "tempguru-co/tempguru-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/event-staffing-compliance/SKILL.md",
+      "computedHash": "248b432adb9d10893afebca794ba211f63c670bf9a85c6418f0f16a50ac6b3a4"
+    },
+    "event-staffing-ordering": {
+      "source": "tempguru-co/tempguru-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/event-staffing-ordering/SKILL.md",
+      "computedHash": "a5d86624fe5841e1140bebd7283a980fd04c3b65aaf20782cdcfd07e3f4da92a"
+    }
+  }
+}
