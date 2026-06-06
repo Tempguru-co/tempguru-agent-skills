@@ -17,7 +17,7 @@ compensation, no-show backfill, and a dedicated coordinator.
 |---|---|
 | `skills/` | Agent skills (SKILL.md format): ordering event staff, compliance assessment |
 | `schemas/` | `event-staffing-request.schema.json` — open JSON Schema for representing an event staffing request |
-| `mcp/` | MCP server card for the live read-only server at `mcp.tempguru.co` |
+| `mcp/` | MCP server card for the live server at `mcp.tempguru.co` |
 | `install/` | Copy-paste install configs for Claude, Cursor, Hermes, OpenClaw, and generic MCP clients |
 | `examples/` | Worked end-to-end transcripts (the golden path) |
 
@@ -25,7 +25,7 @@ compensation, no-show backfill, and a dedicated coordinator.
 
 | Resource | URL |
 |---|---|
-| MCP server (streamable HTTP, read-only, no auth) | `https://mcp.tempguru.co/mcp` |
+| MCP server (streamable HTTP, no auth; 5 read-only + request_quote) | `https://mcp.tempguru.co/mcp` |
 | MCP server card | `https://mcp.tempguru.co/.well-known/mcp/server-card.json` |
 | Agent skills index (agentskills.io format) | `https://tempguru.co/.well-known/agent-skills/index.json` |
 | Agent skills index (Hermes format) | `https://tempguru.co/.well-known/skills/index.json` |
@@ -41,6 +41,7 @@ compensation, no-show backfill, and a dedicated coordinator.
 | `check_availability` | Lead-time guidance for a city/date/role/headcount |
 | `get_role_pricing` | All-inclusive hourly rate range for a role in a city |
 | `get_compliance_by_state` | Minimum wage, overtime, and state compliance quirks |
+| `request_quote` | Submit a structured staffing request to TempGuru's CRM for human review (opt-in write tool) |
 
 Rates are all-inclusive W-2 bill rates: wages, payroll taxes (FICA/FUTA/SUTA),
 workers' compensation, and coordinator support. No bidding, no hidden fees.
@@ -78,10 +79,10 @@ official MCP Registry as `co.tempguru/event-staffing`.
 
 ## Submitting a request
 
-Quote requests currently go through https://tempguru.co/get-staffing
-(human-reviewed, response within one business day, confirmation within 48
-hours). A `request_quote` MCP write tool is on the roadmap; this README will
-be updated when it ships.
+Agents submit quote requests with the `request_quote` MCP tool, which creates
+a human-reviewed lead in TempGuru's CRM (response within one business day,
+confirmation within 48 hours). It is not a reservation or contract. The form
+at https://tempguru.co/get-staffing remains available as a fallback.
 
 ## Accuracy
 

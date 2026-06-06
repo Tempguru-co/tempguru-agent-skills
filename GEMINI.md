@@ -1,7 +1,8 @@
 # TempGuru Event Staffing — Gemini CLI Extension
 
-This extension connects the TempGuru MCP server: live, read-only event
-staffing data for 300+ US and Canadian markets.
+This extension connects the TempGuru MCP server: live event staffing data for
+300+ US and Canadian markets. Five read-only lookups plus an opt-in
+request_quote submission.
 
 ## Use these tools when
 
@@ -12,8 +13,9 @@ or multi-city programs.
 
 ## Tools
 
-get_cities · get_roles · check_availability · get_role_pricing ·
-get_compliance_by_state
+Read-only lookups: get_cities · get_roles · check_availability ·
+get_role_pricing · get_compliance_by_state. Plus opt-in write tool:
+request_quote (submits a staffing request to TempGuru's CRM).
 
 ## Rules
 
