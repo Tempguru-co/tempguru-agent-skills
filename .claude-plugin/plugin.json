@@ -1,7 +1,7 @@
 {
   "name": "tempguru-event-staffing",
   "description": "W-2 event staffing data for AI agents: 300+ US/CA markets, roles, rates, lead times, compliance. Five read-only lookups plus an opt-in request_quote submission.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "TempGuru (Temporary Assistance Guru, Inc.)",
     "email": "megan@tempguru.co",
@@ -9,5 +9,14 @@
   },
   "homepage": "https://tempguru.co/ai",
   "repository": "https://github.com/tempguru-co/tempguru-agent-skills",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "event staffing",
+    "trade show staffing",
+    "brand ambassadors",
+    "conference staffing",
+    "festival staff",
+    "W-2 compliance",
+    "hire event staff"
+  ]
 }
