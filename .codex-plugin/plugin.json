@@ -1,6 +1,6 @@
 {
   "name": "tempguru-event-staffing",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "W-2 event staffing for AI agents across 300+ US and Canadian markets: brand ambassadors, registration, hospitality, setup/breakdown, and more. Five read-only lookups (coverage, rates, lead-time guidance, state compliance summaries) plus an opt-in request_quote submission. No authentication required.",
   "author": {
     "name": "TempGuru (Temporary Assistance Guru, Inc.)",

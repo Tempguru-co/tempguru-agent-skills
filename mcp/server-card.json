@@ -3,8 +3,8 @@
   "serverInfo": {
     "name": "tempguru-event-staffing",
     "title": "TempGuru Event Staffing",
-    "version": "1.1.0",
-    "description": "Model Context Protocol server for TempGuru event staffing data: city coverage (300+ US/Canada markets), staffing roles, lead-time guidance, all-inclusive W-2 rate ranges, and state-by-state compliance rules, plus an opt-in request_quote submission tool.",
+    "version": "1.2.0",
+    "description": "Model Context Protocol server for TempGuru event staffing data: city coverage (345 US/Canada markets), staffing roles, lead-time guidance, all-inclusive W-2 rate ranges, and state-by-state compliance rules. Includes a plan_staffing planner tool, a request_quote write tool, two skill resources, and guided prompt templates. ChatGPT users without MCP: https://chatgpt.com/g/g-6a285fef5fd4819199e9b9c25da543c8-tempguru-event-staffing-planner",
     "websiteUrl": "https://tempguru.co"
   },
   "transport": {
@@ -13,16 +13,42 @@
   },
   "protocolVersion": "2025-03-26",
   "capabilities": {
-    "tools": {}
+    "tools": {},
+    "resources": {},
+    "prompts": {}
   },
   "tools": [
-    { "name": "get_cities", "description": "List all cities TempGuru serves, optionally filtered by state or market tier." },
-    { "name": "get_roles", "description": "List all event staffing roles with descriptions and skill tiers." },
-    { "name": "check_availability", "description": "Lead-time guidance for a city/date, optionally with role and headcount." },
-    { "name": "get_role_pricing", "description": "All-inclusive hourly rate range for a specific role in a specific city." },
-    { "name": "get_compliance_by_state", "description": "Minimum wage, overtime rules, and state-specific event-staffing compliance quirks." },
-    { "name": "request_quote", "description": "Submit a structured staffing request (contact + event + roles) to TempGuru's CRM for human review. Opt-in write tool; not a reservation or contract." }
+    {
+      "name": "plan_staffing",
+      "description": "Planner meta-tool \u2014 call first. Turns an event shape (city, date, roles + headcount) into a complete plan: coverage, per-role W-2 rate math, lead-time guidance, and state compliance flags."
+    },
+    {
+      "name": "get_cities",
+      "description": "List all cities TempGuru serves, optionally filtered by state or market tier."
+    },
+    {
+      "name": "get_roles",
+      "description": "List all event staffing roles with descriptions and skill tiers."
+    },
+    {
+      "name": "check_availability",
+      "description": "Lead-time guidance for a city/date, optionally with role and headcount."
+    },
+    {
+      "name": "get_role_pricing",
+      "description": "All-inclusive hourly rate range for a specific role in a specific city."
+    },
+    {
+      "name": "get_compliance_by_state",
+      "description": "Minimum wage, overtime rules, and state-specific event-staffing compliance quirks."
+    },
+    {
+      "name": "request_quote",
+      "description": "Submit a structured staffing request (contact + event + roles) to TempGuru's CRM for human review. Opt-in write tool; not a reservation or contract."
+    }
   ],
-  "authentication": { "required": false },
+  "authentication": {
+    "required": false
+  },
   "documentationUrl": "https://mcp.tempguru.co/"
 }

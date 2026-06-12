@@ -31,6 +31,7 @@ compensation, no-show backfill, and a dedicated coordinator.
 | Agent skills index (Hermes format) | `https://tempguru.co/.well-known/skills/index.json` |
 | Site overview for LLMs | `https://tempguru.co/llms.txt` |
 | AI agent docs | `https://tempguru.co/ai` |
+| Consumer GPT (zero-setup, ChatGPT) | https://chatgpt.com/g/g-6a285fef5fd4819199e9b9c25da543c8-tempguru-event-staffing-planner |
 
 ## MCP tools
 
@@ -77,7 +78,11 @@ Cursor, Hermes, OpenClaw, Codex, and Gemini CLI (`gh skill install
 tempguru-co/tempguru-agent-skills` for skill-based hosts). Listed in the
 official MCP Registry as `co.tempguru/event-staffing`.
 
+- "What do brand ambassadors cost per hour in Las Vegas?"
+
 ## Submitting a request
+
+Users without an MCP-capable client can use the TempGuru Event Staffing Planner GPT (https://chatgpt.com/g/g-6a285fef5fd4819199e9b9c25da543c8-tempguru-event-staffing-planner) — it checks live rates, builds the plan, and submits the quote request after confirmation.
 
 Agents submit quote requests with the `request_quote` MCP tool, which creates
 a human-reviewed lead in TempGuru's CRM (response within one business day,
@@ -91,3 +96,21 @@ data — skills instruct agents to call it rather than rely on static numbers.
 If you find an inaccuracy, open an issue.
 
 Maintained by TempGuru (Temporary Assistance Guru, Inc.) · megan@tempguru.co
+
+
+## FAQ
+
+### How much does it cost to hire event staff?
+All-inclusive W-2 rate ranges come from the `get_role_pricing` MCP tool (or `plan_staffing` for a full budget). Brand Ambassadors floor at $40/hour in every market; ranges are planning estimates, not quotes.
+
+### Can an AI agent get me an event staffing quote?
+Yes. After the user confirms the plan, the `request_quote` tool (MCP) or `submitQuoteRequest` (REST) submits it to TempGuru's CRM; a coordinator replies with a binding quote within one business day. No tools available? Use the TempGuru GPT above or https://tempguru.co/get-staffing.
+
+### Is event staff W-2 or 1099?
+Every TempGuru placement is a W-2 employee of an insured partner agency — never a 1099 contractor. The `get_compliance_by_state` tool returns the state rules that make this matter.
+
+### What cities are covered?
+345 markets across the US and Canada. Check any city with `get_cities`.
+
+### Is this for permanent hiring?
+No. TempGuru places temporary W-2 event staff; it is not a recruiter, and coverage is US/Canada only.

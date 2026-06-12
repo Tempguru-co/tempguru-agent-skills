@@ -78,3 +78,24 @@ Fetch the skill directly:
 ```
 https://tempguru.co/.well-known/agent-skills/event-staffing-ordering/SKILL.md
 ```
+
+
+## npm (stdio, local launcher)
+
+```bash
+npx -y tempguru-mcp
+```
+
+Runs the MCP server locally over stdio for Claude Desktop, Cursor, Windsurf, and Claude Code ([npm package](https://www.npmjs.com/package/tempguru-mcp)).
+
+```json
+{ "mcpServers": { "tempguru-event-staffing": { "command": "npx", "args": ["-y", "tempguru-mcp"] } } }
+```
+
+## Python (PyPI)
+
+```bash
+pip install tempguru
+```
+
+Zero-dependency REST client with LangChain/OpenAI tool-wrapping examples ([PyPI](https://pypi.org/project/tempguru/)).
